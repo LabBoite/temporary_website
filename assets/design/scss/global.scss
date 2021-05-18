@@ -1,0 +1,1013 @@
+html {
+    font-family: $font-family-main;
+}
+
+p {
+    margin-top: 0;
+}
+
+strong {
+    font-weight: 700;
+}
+
+main {
+    @include responsive-XS{
+        padding-top: $m1-XS / 2;
+        padding-bottom: $m1-XS / 2;
+    }
+    @include responsive-SM{
+        padding-top: $m1-SM / 2;
+        padding-bottom: $m1-SM / 2;
+    }
+    @include responsive-MD{
+        padding-top: $m1-MD / 2;
+        padding-bottom: $m1-MD / 2;
+    }
+    @include responsive-LG{
+        padding-top: $m1-LG / 2;
+        padding-bottom: $m1-LG / 2;
+    }
+    @include responsive-XL{
+        padding-top: $m1-XL / 2;
+        padding-bottom: $m1-XL / 2;
+    }
+}
+
+.container {
+    box-sizing: border-box;
+    margin-right: auto;
+    margin-left: auto;
+    @include responsive-XS{
+        padding-left: 20px;
+        padding-right: 20px;
+        width: $container-sm-width-XS;
+    }
+    @include responsive-SM{
+        padding: 0;
+        width: $container-sm-width-SM;
+    }
+    @include responsive-MD{
+        padding: 0;
+        width: $container-sm-width-MD;
+    }
+    @include responsive-LG{
+        padding: 0;
+        width: $container-sm-width-LG;
+    }
+    @include responsive-XL{
+        padding: 0;
+        width: $container-sm-width-XL;
+    }
+}
+
+
+/*-- INTRO --*/
+
+.intro-logo {
+    @include responsive-XS{
+        margin-bottom: $m1-XS / 4;
+    }
+    @include responsive-SM{
+        margin-bottom: $m1-SM / 4;
+    }
+    @include responsive-MD{
+        margin-bottom: $m1-MD / 4;
+    }
+    @include responsive-LG{
+        margin-bottom: $m1-LG / 4;
+    }
+    @include responsive-XL{
+        margin-bottom: $m1-XL / 4;
+    }
+}
+
+.intro-nav {
+    @include responsive-XS{
+        margin-bottom: $m1-XS / 4;
+    }
+    @include responsive-SM{
+        margin-bottom: $m1-SM / 4;
+    }
+    @include responsive-MD{
+        margin-bottom: $m1-MD / 4;
+    }
+    @include responsive-LG{
+        margin-bottom: $m1-LG / 4;
+    }
+    @include responsive-XL{
+        margin-bottom: $m1-XL / 4;
+    }
+}
+
+.intro-logo-img {
+    @include responsive-XS{
+        width: 110px;
+        height: 60px;
+    }
+    @include responsive-SM{
+        width: 110px;
+        height: 60px;
+    }
+    @include responsive-MD{
+        width: 130px;
+        height: 70px;
+    }
+    @include responsive-LG{
+        width: 140px;
+        height: 75px;
+    }
+    @include responsive-XL{
+        width: 140px;
+        height: 75px;
+    }
+}
+
+
+
+.intro-link-back, .intro-link-back:visited {
+    display: inline-block;
+    background: #FCEEE6;
+    color: $orange-labboite;
+    text-decoration: none;
+    font-weight: 600;
+    @include responsive-XS{
+        font-size: $p-box-XS;
+        padding: 6px 18px;
+    }
+    @include responsive-SM{
+        font-size: $p-box-SM;
+        padding: 6px 18px;
+    }
+    @include responsive-MD{
+        font-size: $p-box-MD;
+        padding: 6px 18px;
+    }
+    @include responsive-LG{
+        font-size: $p-box-LG;
+        padding: 8px 20px;
+    }
+    @include responsive-XL{
+        font-size: $p-box-XL;
+        padding: 8px 20px;
+    }
+}
+
+.intro-link-back:hover, .intro-link-back:focus {
+    background: #F9DECE;
+    color: $orange-5;
+    text-decoration: none;
+}
+
+.intro-message {
+    color: #9B9B9B;
+    font-weight: 400;
+    @include responsive-XS{
+        font-size: $p-XS;
+        margin-bottom: $m1-XS / 4;
+    }
+    @include responsive-SM{
+        font-size: $p-SM;
+        margin-bottom: $m1-SM / 4;
+    }
+    @include responsive-MD{
+        font-size: $p-MD;
+        margin-bottom: $m1-MD / 4;
+    }
+    @include responsive-LG{
+        font-size: $p-LG;
+        margin-bottom: $m1-LG / 4;
+    }
+    @include responsive-XL{
+        font-size: $p-XL;
+        margin-bottom: $m1-XL / 4;
+    }
+}
+
+.intro-alert {
+    @include responsive-XS{
+        margin-bottom: $m1-XS / 4;
+    }
+    @include responsive-SM{
+        margin-bottom: $m1-SM / 4;
+    }
+    @include responsive-MD{
+        margin-bottom: $m1-MD / 4;
+    }
+    @include responsive-LG{
+        margin-bottom: $m1-LG / 4;
+    }
+    @include responsive-XL{
+        margin-bottom: $m1-XL / 4;
+    }
+}
+
+.alert-heading {
+    width: 100%;
+    box-sizing: border-box;
+    background: $orange-labboite;
+    color: $white;
+    font-weight: 800;
+    text-transform: uppercase;
+    text-align: center;
+    @include responsive-XS{
+        padding: $grid-p-XS / 2;
+        font-size: $p-box-XS;
+        margin-bottom: $p-XS;
+    }
+    @include responsive-SM{
+        padding: $grid-p-SM / 2;
+        font-size: $p-box-SM;
+        margin-bottom: $p-SM;
+    }
+    @include responsive-MD{
+        padding: $grid-p-MD / 2;
+        font-size: $p-box-MD;
+        margin-bottom: $p-MD;
+    }
+    @include responsive-LG{
+        padding: $grid-p-LG;
+        font-size: $p-box-LG;
+        margin-bottom: $p-LG;
+    }
+    @include responsive-XL{
+        padding: $grid-p-XL / 2;
+        font-size: $p-box-XL;
+        margin-bottom: $p-XL;
+    }
+}
+
+.alert-body {
+    background: $white;
+    color: $orange-labboite;
+    border: solid 5px $orange-1;
+    @include responsive-XS{
+        padding: $grid-p-XS;
+        font-size: $p-box-XS;
+    }
+    @include responsive-SM{
+        padding: $grid-p-SM;
+        font-size: $p-box-SM;
+    }
+    @include responsive-MD{
+        padding: $grid-p-MD;
+        font-size: $p-box-MD;
+    }
+    @include responsive-LG{
+        padding: $grid-p-LG;
+        font-size: $p-box-LG;
+    }
+    @include responsive-XL{
+        padding: $grid-p-XL;
+        font-size: $p-box-XL;
+    }
+}
+
+.alert-separator {
+    border-bottom: 1px solid $orange-1;
+    width: 100%;
+    @include responsive-XS{
+        margin-top: $p-XS;
+        margin-bottom: $p-XS;
+    }
+    @include responsive-SM{
+        margin-top: $p-SM;
+        margin-bottom: $p-SM;
+    }
+    @include responsive-MD{
+        margin-top: $p-MD;
+        margin-bottom: $p-MD;
+    }
+    @include responsive-LG{
+        margin-top: $p-LG;
+        margin-bottom: $p-LG;
+    }
+    @include responsive-XL{
+        margin-top: $p-XL;
+        margin-bottom: $p-XL;
+    }
+}
+
+.alert-body p {
+    @include responsive-XS{
+        margin-bottom: $p-XS / 2;
+    }
+    @include responsive-SM{
+        margin-bottom: $p-SM / 2;
+    }
+    @include responsive-MD{
+        margin-bottom: $p-MD / 2;
+    }
+    @include responsive-LG{
+        margin-bottom: $p-LG / 2;
+    }
+    @include responsive-XL{
+        margin-bottom: $p-XL / 2;
+    }
+}
+
+.alert-body p:last-of-type {
+    margin-bottom: 0;
+}
+
+.alert-body a, .alert-body a:visited {
+    text-decoration: underline;
+    color: $orange-labboite;
+}
+
+.alert-body a:focus, .alert-body a:hover {
+    text-decoration: none;
+    color: $orange-5;
+}
+
+
+
+
+/*-- MENU --*/
+
+.menu-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    @include responsive-XS{
+        margin-bottom: $m1-XS / 4;
+    }
+    @include responsive-SM{
+        margin-bottom: $m1-SM / 4;
+    }
+    @include responsive-MD{
+        margin-bottom: $m1-MD / 4;
+    }
+    @include responsive-LG{
+        margin-bottom: $m1-LG / 4;
+    }
+    @include responsive-XL{
+        margin-bottom: $m1-XL / 4;
+    }
+}
+
+.menu-list-item {
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    margin-bottom: 5px;
+    font-weight: 400;
+    @include responsive-XS{
+        padding: $grid-p-XS;
+        font-size: $p-XS;
+    }
+    @include responsive-SM{
+        padding: $grid-p-SM;
+        font-size: $p-SM;
+    }
+    @include responsive-MD{
+        padding: $grid-p-MD;
+        font-size: $p-MD;
+    }
+    @include responsive-LG{
+        padding: $grid-p-LG;
+        font-size: $p-LG;
+    }
+    @include responsive-XL{
+        padding: $grid-p-XL;
+        font-size: $p-XL;
+    }
+}
+
+.menu-list-item, .menu-list-item:visited {
+    background: #F9F9F9;
+    color: #4A4A4A;
+    text-decoration: none;
+}
+
+.menu-list-item:hover, .menu-list-item:focus {
+    background: #F9F9F9;
+    color: $orange-labboite;
+    text-decoration: none;
+}
+
+.menu-list-item strong {
+    font-weight: 700;
+}
+
+
+/*-- BLOC --*/
+
+.bloc {
+    border-bottom: 1px solid #E2E2E2;
+    @include responsive-XS{
+        padding-top: $m1-XS / 2;
+        padding-bottom: $m1-XS / 2;
+    }
+    @include responsive-SM{
+        padding-top: $m1-SM / 2;
+        padding-bottom: $m1-SM / 2;
+    }
+    @include responsive-MD{
+        padding-top: $m1-MD / 2;
+        padding-bottom: $m1-MD / 2;
+    }
+    @include responsive-LG{
+        padding-top: $m1-LG / 2;
+        padding-bottom: $m1-LG / 2;
+    }
+    @include responsive-XL{
+        padding-top: $m1-XL / 2;
+        padding-bottom: $m1-XL / 2;
+    }
+}
+
+.bloc:last-of-type {
+    border: none;
+}
+
+.bloc h2 {
+    font-weight: 700;
+    color: $orange-labboite;
+    margin-top: 0;
+    @include responsive-XS{
+        font-size: $h2-fontsize-XS;
+        margin-bottom: $h2-fontsize-XS / 2;
+    }
+    @include responsive-SM{
+        font-size: $h2-fontsize-SM;
+        margin-bottom: $h2-fontsize-SM / 2;
+    }
+    @include responsive-MD{
+        font-size: $h2-fontsize-MD;
+        margin-bottom: $h2-fontsize-MD / 2;
+    }
+    @include responsive-LG{
+        font-size: $h2-fontsize-LG;
+        margin-bottom: $h2-fontsize-LG / 2;
+    }
+    @include responsive-XL{
+        font-size: $h2-fontsize-XL;
+        margin-bottom: $h2-fontsize-XL / 2;
+    }
+}
+
+.bloc p {
+    color: #4A4A4A;
+    @include responsive-XS{
+        font-size: $p-XS;
+        margin-bottom: $p-XS;
+    }
+    @include responsive-SM{
+        font-size: $p-SM;
+        margin-bottom: $p-SM;
+    }
+    @include responsive-MD{
+        font-size: $p-MD;
+        margin-bottom: $p-MD;
+    }
+    @include responsive-LG{
+        font-size: $p-LG;
+        margin-bottom: $p-LG;
+    }
+    @include responsive-XL{
+        font-size: $p-XL;
+        margin-bottom: $p-XL;
+    }
+}
+
+.bloc p a, .bloc p a:visited {
+    color: $orange-labboite;
+    text-decoration: none;
+}
+
+.bloc p a:hover, .bloc p a:hover {
+    color: $orange-5;
+    text-decoration: none;
+}
+
+.button-cta {
+    display: inline-block;
+    background: $orange-4;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: $white;
+    transition-duration: 0.2s;
+    @include responsive-XS{
+        font-size: 0.7rem;
+        padding: 6px 18px;
+    }
+    @include responsive-SM{
+        font-size: 0.7rem;
+        padding: 6px 18px;
+    }
+    @include responsive-MD{
+        font-size: 0.8rem;
+        padding: 6px 18px;
+    }
+    @include responsive-LG{
+        font-size: 0.9rem;
+        padding: 8px 20px;
+    }
+    @include responsive-XL{
+        font-size: 0.9rem;
+        padding: 8px 20px;
+    }
+}
+
+.button-cta:visited {
+    background: $orange-4;
+    color: $white;
+    transition-duration: 0.2s;
+}
+
+.button-cta:hover, .button-cta:focus {
+    background: $orange-5;
+    color: $white;
+    transition-duration: 0.2s;
+}
+
+
+.trainings-list {
+    display: grid;
+    box-sizing: border-box;
+    max-width: 1300px;
+    @include responsive-XS{
+        grid-template-columns: 1fr;
+        width: 100%;
+        row-gap: $grid-column-XS;
+        margin-bottom: $m1-XS / 4;
+    }
+    @include responsive-SM{
+        grid-template-columns: repeat(2, 1fr);
+        width: 100%;
+        column-gap: $grid-column-SM;
+        row-gap: $grid-column-SM;
+        margin-bottom: $m1-SM / 4;
+    }
+    @include responsive-MD{
+        grid-template-columns: repeat(2, 1fr);
+        width: 100%;
+        column-gap: $grid-column-MD;
+        row-gap: $grid-column-MD;
+        margin-bottom: $m1-MD / 4;
+    }
+    @include responsive-LG{
+        grid-template-columns: repeat(3, 1fr);
+        width: 100%;
+        column-gap: $grid-column-LG;
+        row-gap: $grid-column-LG;
+        margin-bottom: $m1-LG / 4;
+    }
+    @include responsive-XL{
+        grid-template-columns: repeat(3, 1fr);
+        width: 100%;
+        column-gap: $grid-column-XL;
+        row-gap: $grid-column-XL;
+        margin-bottom: $m1-XL / 4;
+    }
+}
+
+.training-item {
+    background: #F9F9F9;
+    margin-bottom: 5px;
+    @include responsive-XS{
+        padding: $grid-p-XS;
+        font-size: $p-box-XS;
+    }
+    @include responsive-SM{
+        padding: $grid-p-SM;
+        font-size: $p-box-SM;
+    }
+    @include responsive-MD{
+        padding: $grid-p-MD;
+        font-size: $p-box-MD;
+    }
+    @include responsive-LG{
+        padding: $grid-p-LG;
+        font-size: $p-box-LG;
+    }
+    @include responsive-XL{
+        padding: $grid-p-XL;
+        font-size: $p-box-XL;
+    }
+}
+
+.training-machine {
+    font-weight: 700;
+    color: $orange-labboite;
+}
+
+.training-date, .training-hour {
+    font-weight: 400;
+    color: #4A4A4A;
+}
+
+
+.stripe {
+    width: 100vw;
+    background: #F9F9F9;
+    @include responsive-XS{
+        padding-top: $m1-XS / 2;
+        padding-bottom: $m1-XS / 2;
+    }
+    @include responsive-SM{
+        padding-top: $m1-SM / 2;
+        padding-bottom: $m1-SM / 2;
+    }
+    @include responsive-MD{
+        padding-top: $m1-MD / 2;
+        padding-bottom: $m1-MD / 2;
+    }
+    @include responsive-LG{
+        padding-top: $m1-LG / 2;
+        padding-bottom: $m1-LG / 2;
+    }
+    @include responsive-XL{
+        padding-top: $m1-XL / 2;
+        padding-bottom: $m1-XL / 2;
+    }
+}
+
+footer {
+    margin: 0;
+    padding: 0;
+}
+
+.contact-item {
+    text-align: center;
+    @include responsive-XS{
+        margin-bottom: $m1-XS / 2;
+    }
+    @include responsive-SM{
+        margin-bottom: $m1-SM / 2;
+    }
+    @include responsive-MD{
+        margin-bottom: $m1-MD / 2;
+    }
+    @include responsive-LG{
+        margin-bottom: $m1-LG / 2;
+    }
+    @include responsive-XL{
+        margin-bottom: $m1-XL / 2;
+    }
+}
+
+.contact-item h3 {
+    color: $orange-labboite;
+    text-transform: uppercase;
+    font-weight: 800;
+    @include responsive-XS{
+        font-size: $p-box-XS;
+        margin-bottom: $p-box-XS / 2; 
+    }
+    @include responsive-SM{
+        font-size: $p-box-SM;
+        margin-bottom: $p-box-SM / 2;
+    }
+    @include responsive-MD{
+        font-size: $p-box-MD;
+        margin-bottom: $p-box-MD / 2;
+    }
+    @include responsive-LG{
+        font-size: $p-box-LG;
+        margin-bottom: $p-box-LG / 2;
+    }
+    @include responsive-XL{
+        font-size: $p-box-XL;
+        margin-bottom: $p-box-XL / 2;
+    }
+}
+
+.contact-item p {
+    color: #4A4A4A;
+    @include responsive-XS{
+        font-size: $p-box-XS;
+    }
+    @include responsive-SM{
+        font-size: $p-box-SM;
+    }
+    @include responsive-MD{
+        font-size: $p-box-MD;
+    }
+    @include responsive-LG{
+        font-size: $p-box-LG;
+    }
+    @include responsive-XL{
+        font-size: $p-box-XL;
+    }
+}
+
+.contact-item ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.contact-item a, .contact-item a:visited {
+    color: $orange-labboite;
+    text-decoration: none;
+}
+
+.contact-item a:hover, .contact-item a:hover {
+    color: $orange-5;
+    text-decoration: none;
+}
+
+
+/*-- PAGE --*/
+
+.page h2 {
+    font-weight: 700;
+    color: $orange-labboite;
+    margin-top: 0;
+    @include responsive-XS{
+        font-size: $h2-fontsize-XS;
+        margin-bottom: $h2-fontsize-XS / 2;
+    }
+    @include responsive-SM{
+        font-size: $h2-fontsize-SM;
+        margin-bottom: $h2-fontsize-SM / 2;
+    }
+    @include responsive-MD{
+        font-size: $h2-fontsize-MD;
+        margin-bottom: $h2-fontsize-MD / 2;
+    }
+    @include responsive-LG{
+        font-size: $h2-fontsize-LG;
+        margin-bottom: $h2-fontsize-LG / 2;
+    }
+    @include responsive-XL{
+        font-size: $h2-fontsize-XL;
+        margin-bottom: $h2-fontsize-XL / 2;
+    }
+}
+
+.page h3 {
+    font-weight: 600;
+    color: $orange-labboite;
+    margin-top: 0;
+    @include responsive-XS{
+        font-size: $h3-fontsize-XS;
+        margin-bottom: $h3-fontsize-XS / 2;
+    }
+    @include responsive-SM{
+        font-size: $h3-fontsize-SM;
+        margin-bottom: $h3-fontsize-SM / 2;
+    }
+    @include responsive-MD{
+        font-size: $h3-fontsize-MD;
+        margin-bottom: $h3-fontsize-MD / 2;
+    }
+    @include responsive-LG{
+        font-size: $h3-fontsize-LG;
+        margin-bottom: $h3-fontsize-LG / 2;
+    }
+    @include responsive-XL{
+        font-size: $h3-fontsize-XL;
+        margin-bottom: $h3-fontsize-XL / 2;
+    }
+}
+
+.page p {
+    color: #4A4A4A;
+    @include responsive-XS{
+        font-size: $p-XS;
+        margin-bottom: $p-XS / 2;
+    }
+    @include responsive-SM{
+        font-size: $p-SM;
+        margin-bottom: $p-SM / 2;
+    }
+    @include responsive-MD{
+        font-size: $p-MD;
+        margin-bottom: $p-MD / 2;
+    }
+    @include responsive-LG{
+        font-size: $p-LG;
+        margin-bottom: $p-LG / 2;
+    }
+    @include responsive-XL{
+        font-size: $p-XL;
+        margin-bottom: $p-XL / 2;
+    }
+}
+
+.page p a, .page p a:visited {
+    color: $orange-labboite;
+    text-decoration: none;
+}
+
+.page p a:hover, .page p a:hover {
+    color: $orange-5;
+    text-decoration: none;
+}
+
+.page ul.list-default {
+    list-style: disc;
+    color: #4A4A4A;
+    @include responsive-XS{
+        font-size: $p-XS;
+    }
+    @include responsive-SM{
+        font-size: $p-SM;
+    }
+    @include responsive-MD{
+        font-size: $p-MD;
+    }
+    @include responsive-LG{
+        font-size: $p-LG;
+    }
+    @include responsive-XL{
+        font-size: $p-XL;
+    }
+}
+
+.page ul.list-default li {
+    @include responsive-XS{
+        margin-bottom: $p-XS / 2;
+    }
+    @include responsive-SM{
+        margin-bottom: $p-SM / 2;
+    }
+    @include responsive-MD{
+        margin-bottom: $p-MD / 2;
+    }
+    @include responsive-LG{
+        margin-bottom: $p-LG / 2;
+    }
+    @include responsive-XL{
+        margin-bottom: $p-XL / 2;
+    }
+}
+
+.page ul.list-forms {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.page ul.list-forms li {
+    @include responsive-XS{
+        margin-bottom: $p-XS / 2;
+    }
+    @include responsive-SM{
+        margin-bottom: $p-SM / 2;
+    }
+    @include responsive-MD{
+        margin-bottom: $p-MD / 2;
+    }
+    @include responsive-LG{
+        margin-bottom: $p-LG / 2;
+    }
+    @include responsive-XL{
+        margin-bottom: $p-XL / 2;
+    }
+}
+
+.form-download, .form-download:visited {
+    display: inline-block;
+    background: #F9F9F9;
+    text-decoration: none;
+    color: #777777;
+    @include responsive-XS{
+        font-size: $p-XS;
+        padding: 6px 18px;
+    }
+    @include responsive-SM{
+        font-size: $p-SM;
+        padding: 6px 18px;
+    }
+    @include responsive-MD{
+        font-size: $p-MD;
+        padding: 6px 18px;
+    }
+    @include responsive-LG{
+        font-size: $p-LG;
+        padding: 8px 20px;
+    }
+    @include responsive-XL{
+        font-size: $p-XL;
+        padding: 8px 20px;
+    }
+}
+
+.form-download:hover, .form-download:focus {
+    background: #F9F9F9;
+    color: $orange-labboite;
+    text-decoration: none;
+}
+
+.form-download strong {
+    font-weight: 700;
+}
+
+.page-part {
+    @include responsive-XS{
+        margin-bottom: $m1-XS / 2;
+    }
+    @include responsive-SM{
+        margin-bottom: $m1-SM / 2;
+    }
+    @include responsive-MD{
+        margin-bottom: $m1-MD / 2;
+    }
+    @include responsive-LG{
+        margin-bottom: $m1-LG / 2;
+    }
+    @include responsive-XL{
+        margin-bottom: $m1-XL / 2;
+    }
+}
+
+.price-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.price-list li {
+    background: #F9F9F9;
+    box-sizing: border-box;
+    width: 100%;
+    margin-bottom: 5px;
+    @include responsive-XS{
+        padding: $grid-p-XS;
+    }
+    @include responsive-SM{
+        padding: $grid-p-SM;
+    }
+    @include responsive-MD{
+        padding: $grid-p-MD;
+    }
+    @include responsive-LG{
+        padding: $grid-p-LG;
+    }
+    @include responsive-XL{
+        padding: $grid-p-XL;
+    }
+}
+
+.price-type {
+    color: #4A4A4A;
+    font-weight: 700;
+    @include responsive-XS{
+        font-size: $p-box-XS;
+    }
+    @include responsive-SM{
+        font-size: $p-box-SM;
+    }
+    @include responsive-MD{
+        font-size: $p-box-MD;
+    }
+    @include responsive-LG{
+        font-size: $p-box-LG;
+    }
+    @include responsive-XL{
+        font-size: $p-box-XL;
+    }
+}
+
+.price-info {
+    color: #4A4A4A;
+    font-weight: 400;
+    @include responsive-XS{
+        font-size: $p-box-XS;
+        margin-bottom: $p-box-XS;
+    }
+    @include responsive-SM{
+        font-size: $p-box-SM;
+        margin-bottom: $p-box-SM;
+    }
+    @include responsive-MD{
+        font-size: $p-box-MD;
+        margin-bottom: $p-box-MD;
+    }
+    @include responsive-LG{
+        font-size: $p-box-LG;
+        margin-bottom: $p-box-LG;
+    }
+    @include responsive-XL{
+        font-size: $p-box-XL;
+        margin-bottom: $p-box-XL;
+    }
+}
+
+.price-amount {
+    font-weight: 400;
+    color: $orange-labboite;
+    @include responsive-XS{
+        font-size: $h2-fontsize-XS;
+    }
+    @include responsive-SM{
+        font-size: $h2-fontsize-SM;
+    }
+    @include responsive-MD{
+        font-size: $h2-fontsize-MD;
+    }
+    @include responsive-LG{
+        font-size: $h2-fontsize-LG;
+    }
+    @include responsive-XL{
+        font-size: $h2-fontsize-XL;
+    }
+}
+
+.price-amount strong {
+    font-weight: 800;
+}

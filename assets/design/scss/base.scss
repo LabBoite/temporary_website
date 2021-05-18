@@ -1,0 +1,377 @@
+@mixin responsive-XS {
+    @media screen and (max-width: map-get($breakpoints-max, XS)){
+        @content;
+    }
+}
+
+@mixin responsive-SM {
+    @media screen and (min-width: map-get($breakpoints-min, SM)) and (max-width: map-get($breakpoints-max, SM)){
+        @content;
+    }
+}
+
+@mixin responsive-MD {
+    @media screen and (min-width: map-get($breakpoints-min, MD)) and (max-width: map-get($breakpoints-max, MD)){
+        @content;
+    }
+}
+
+@mixin responsive-LG {
+    @media screen and (min-width: map-get($breakpoints-min, LG)) and (max-width: map-get($breakpoints-max, LG)){
+        @content;
+    }
+}
+
+@mixin responsive-XL {
+    @media screen and (min-width: map-get($breakpoints-min, XL)){
+        @content;
+    }
+}
+
+
+/*-- COMMON --*/
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: $white;
+}
+
+
+/*-- HEADER & FOOTER --*/
+
+header {
+    background: $white;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    @include responsive-XS{
+        height: 50px;
+    }
+    @include responsive-SM{
+        height: 50px;
+    }
+    @include responsive-MD{
+        height: 55px;
+    }
+    @include responsive-LG{
+        height: 60px;
+    }
+    @include responsive-XL{
+        height: 60px;
+    }
+}
+
+.logo-header {
+    width: 92px;
+    height: 15px;
+}
+
+footer {
+    @include responsive-XS{
+        margin-top: $m1-XS;
+        margin-bottom: $m1-XS;
+    }
+    @include responsive-SM{
+        margin-top: $m1-SM;
+        margin-bottom: $m1-SM;
+    }
+    @include responsive-MD{
+        margin-top: $m1-MD;
+        margin-bottom: $m1-MD;
+    }
+    @include responsive-LG{
+        margin-top: $m1-LG;
+        margin-bottom: $m1-LG;
+    }
+    @include responsive-XL{
+        margin-top: $m1-XL;
+        margin-bottom: $m1-XL;
+    }
+}
+
+.icon-social {
+    @include responsive-XS{
+        width: $footer-icon-size-XS;
+        height: $footer-icon-size-XS;
+        background-size: $footer-icon-size-XS $footer-icon-size-XS;
+    }
+    @include responsive-SM{
+        width: $footer-icon-size-SM;
+        height: $footer-icon-size-SM;
+        background-size: $footer-icon-size-SM $footer-icon-size-SM;
+    }
+    @include responsive-MD{
+        width: $footer-icon-size-MD;
+        height: $footer-icon-size-MD;
+        background-size: $footer-icon-size-MD $footer-icon-size-MD;
+    }
+    @include responsive-LG{
+        width: $footer-icon-size-LG;
+        height: $footer-icon-size-LG;
+        background-size: $footer-icon-size-LG $footer-icon-size-LG;
+    }
+    @include responsive-XL{
+        width: $footer-icon-size-XL;
+        height: $footer-icon-size-XL;
+        background-size: $footer-icon-size-XL $footer-icon-size-XL;
+    }
+}
+
+footer {
+    width: 100vw;
+    text-align: center;
+}
+
+.footer-social div, .footer-links div {
+    @include responsive-XS{
+        margin-right: $footer-icon-size-XS / 2;
+    }
+    @include responsive-SM{
+        margin-right: $footer-icon-size-SM / 2;
+    }
+    @include responsive-MD{
+        margin-right: $footer-icon-size-MD / 2;
+    }
+    @include responsive-LG{
+        margin-right: $footer-icon-size-LG / 2;
+    }
+    @include responsive-XL{
+        margin-right: $footer-icon-size-XL / 2;
+    }
+}
+
+.footer-social {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.footer-social div:last-child {
+    margin-right: 0;
+}
+
+.icon-social {
+    transition-duration: 0.2s;
+}
+
+.icon-social:hover {
+    transition-duration: 0.2s;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    @include responsive-XS{
+        margin-top: $margins-1-XS / 4;
+    }
+    @include responsive-SM{
+        margin-top: $margins-1-SM / 4;
+    }
+    @include responsive-MD{
+        margin-top: $margins-1-MD / 4;
+    }
+    @include responsive-LG{
+        margin-top: $margins-1-LG / 4;
+    }
+    @include responsive-XL{
+        margin-top: $margins-1-XL / 4;
+    }
+}
+
+.footer-links div:last-child {
+    margin-right: 0;
+}
+
+.footer-link-item {
+    font-family: "Manrope", Helvetica, Arial, sans-serif;
+    font-weight: 600;
+    color: $grey-6;
+    text-decoration: none;
+    transition-duration: 0.2s;
+    @include responsive-XS{
+        font-size: 0.75rem;
+    }
+    @include responsive-SM{
+        font-size: 0.75rem;
+    }
+    @include responsive-MD{
+        font-size: 0.8125rem;
+    }
+    @include responsive-LG{
+        font-size: 0.875rem;
+    }
+    @include responsive-XL{
+        font-size: 0.875rem;
+    }
+}
+
+.footer-link-item:hover {
+    color: $violet-formats;
+    text-decoration: none;
+    transition-duration: 0.2s;
+}
+
+
+/*-- CONTAINER --*/
+
+.container-x-l, .container-x-s {
+    box-sizing: border-box;
+}
+
+.container-x-l {
+    margin: 0 auto;
+    @include responsive-XS{
+        width: $container-large-XS;
+        padding-left: $margins-1-SM;
+        padding-right: $margins-1-SM;
+    }
+    @include responsive-SM{
+        width: $container-large-SM;
+    }
+    @include responsive-MD{
+        width: $container-large-MD;
+    }
+    @include responsive-LG{
+        width: $container-large-LG;
+    }
+    @include responsive-XL{
+        width: $container-large-XL;
+    }
+}
+
+.container-x-s {
+    margin: 0 auto;
+    @include responsive-XS{
+        width: $container-small-XS;
+        padding-left: $margins-1-SM;
+        padding-right: $margins-1-SM;
+    }
+    @include responsive-SM{
+        width: $container-small-SM;
+    }
+    @include responsive-MD{
+        width: $container-small-MD;
+    }
+    @include responsive-LG{
+        width: $container-small-LG;
+    }
+    @include responsive-XL{
+        width: $container-small-XL;
+    }
+}
+
+.spacing-t-l {
+    @include responsive-XS{
+        padding-top: $margins-1-XS;
+    }
+    @include responsive-SM{
+        padding-top: $margins-1-SM;
+    }
+    @include responsive-MD{
+        padding-top: $margins-1-MD;
+    }
+    @include responsive-LG{
+        padding-top: $margins-1-LG;
+    }
+    @include responsive-XL{
+        padding-top: $margins-1-XL;
+    }
+}
+
+.spacing-t-m {
+    @include responsive-XS{
+        padding-top: $margins-1-XS / 2;
+    }
+    @include responsive-SM{
+        padding-top: $margins-1-SM / 2;
+    }
+    @include responsive-MD{
+        padding-top: $margins-1-MD / 2;
+    }
+    @include responsive-LG{
+        padding-top: $margins-1-LG / 2;
+    }
+    @include responsive-XL{
+        padding-top: $margins-1-XL / 2;
+    }
+}
+
+.spacing-b-l {
+    @include responsive-XS{
+        padding-bottom: $margins-1-XS;
+    }
+    @include responsive-SM{
+        padding-bottom: $margins-1-SM;
+    }
+    @include responsive-MD{
+        padding-bottom: $margins-1-MD;
+    }
+    @include responsive-LG{
+        padding-bottom: $margins-1-LG;
+    }
+    @include responsive-XL{
+        padding-bottom: $margins-1-XL;
+    }
+}
+
+.spacing-b-m {
+    @include responsive-XS{
+        padding-bottom: $margins-1-XS / 2;
+    }
+    @include responsive-SM{
+        padding-bottom: $margins-1-SM / 2;
+    }
+    @include responsive-MD{
+        padding-bottom: $margins-1-MD / 2;
+    }
+    @include responsive-LG{
+        padding-bottom: $margins-1-LG / 2;
+    }
+    @include responsive-XL{
+        padding-bottom: $margins-1-XL / 2;
+    }
+}
+
+.spacing-b-s {
+    @include responsive-XS{
+        padding-bottom: $margins-2-XS;
+    }
+    @include responsive-SM{
+        padding-bottom: $margins-2-SM;
+    }
+    @include responsive-MD{
+        padding-bottom: $margins-2-MD;
+    }
+    @include responsive-LG{
+        padding-bottom: $margins-2-LG;
+    }
+    @include responsive-XL{
+        padding-bottom: $margins-2-XL;
+    }
+}
+
+.spacing-t-s {
+    @include responsive-XS{
+        padding-top: $margins-2-XS;
+    }
+    @include responsive-SM{
+        padding-top: $margins-2-SM;
+    }
+    @include responsive-MD{
+        padding-top: $margins-2-MD;
+    }
+    @include responsive-LG{
+        padding-top: $margins-2-LG;
+    }
+    @include responsive-XL{
+        padding-top: $margins-2-XL;
+    }
+}
