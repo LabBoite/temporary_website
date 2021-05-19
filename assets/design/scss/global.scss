@@ -836,6 +836,94 @@ footer {
     }
 }
 
+ul.list-docs {
+    border-top: solid 2px #E0E0E0;
+    padding: 0;
+    @include responsive-XS{
+        margin-top: $grid-p-XS;
+        margin-bottom: $grid-p-XS;
+    }
+    @include responsive-SM{
+        margin-top: $grid-p-SM;
+        margin-bottom: $grid-p-SM;
+    }
+    @include responsive-MD{
+        margin-top: $grid-p-MD;
+        margin-bottom: $grid-p-MD;
+    }
+    @include responsive-LG{
+        margin-top: $grid-p-LG;
+        margin-bottom: $grid-p-LG;
+    }
+    @include responsive-XL{
+        margin-top: $grid-p-XL;
+        margin-bottom: $grid-p-XL;
+    }
+}
+
+li.list-doc-item {
+    list-style-type: disc;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: solid 2px #E0E0E0;
+    color: #4A4A4A;
+    @include responsive-XS{
+        font-size: $p-XS;
+        padding-top: $grid-p-XS;
+        padding-bottom: $grid-p-XS;
+    }
+    @include responsive-SM{
+        font-size: $p-SM;
+        padding-top: $grid-p-XS;
+        padding-bottom: $grid-p-XS;;
+    }
+    @include responsive-MD{
+        font-size: $p-MD;
+        padding-top: $grid-p-XS;
+        padding-bottom: $grid-p-XS;;
+    }
+    @include responsive-LG{
+        font-size: $p-LG;
+        padding-top: $grid-p-XS;
+        padding-bottom: $grid-p-XS;
+    }
+    @include responsive-XL{
+        font-size: $p-XL;
+        padding-top: $grid-p-XS;
+        padding-bottom: $grid-p-XS;
+    }
+}
+
+.doc-button-info {
+    display: inline-block;
+    background: $orange-2;
+    font-weight: 600;
+    text-decoration: none;
+    color: $orange-4;
+    transition-duration: 0.2s;
+    @include responsive-XS{
+        font-size: 0.7rem;
+        padding: 6px 18px;
+    }
+    @include responsive-SM{
+        font-size: 0.7rem;
+        padding: 6px 18px;
+    }
+    @include responsive-MD{
+        font-size: 0.8rem;
+        padding: 6px 18px;
+    }
+    @include responsive-LG{
+        font-size: 0.9rem;
+        padding: 8px 20px;
+    }
+    @include responsive-XL{
+        font-size: 0.9rem;
+        padding: 8px 20px;
+    }
+}
+
 .page ul.list-forms {
     list-style: none;
     padding: 0;
