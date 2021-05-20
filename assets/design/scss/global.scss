@@ -837,25 +837,30 @@ footer {
 }
 
 ul.list-docs {
-    border-top: solid 2px #E0E0E0;
+    background: #F9F9F9;
     padding: 0;
     @include responsive-XS{
+        padding: $grid-p-XS;
         margin-top: $grid-p-XS;
         margin-bottom: $grid-p-XS;
     }
     @include responsive-SM{
+        padding: $grid-p-SM;
         margin-top: $grid-p-SM;
         margin-bottom: $grid-p-SM;
     }
     @include responsive-MD{
+        padding: $grid-p-MD;
         margin-top: $grid-p-MD;
         margin-bottom: $grid-p-MD;
     }
     @include responsive-LG{
+        padding: $grid-p-LG;
         margin-top: $grid-p-LG;
         margin-bottom: $grid-p-LG;
     }
     @include responsive-XL{
+        padding: $grid-p-XL;
         margin-top: $grid-p-XL;
         margin-bottom: $grid-p-XL;
     }
@@ -895,32 +900,25 @@ li.list-doc-item {
     }
 }
 
-.doc-button-info {
-    display: inline-block;
-    background: $orange-2;
-    font-weight: 600;
-    text-decoration: none;
-    color: $orange-4;
-    transition-duration: 0.2s;
+li.list-doc-item:last-of-type {
+    border: none;
+}
+
+.doc-button {
     @include responsive-XS{
-        font-size: 0.7rem;
-        padding: 6px 18px;
+        margin-left: $grid-p-XS;
     }
     @include responsive-SM{
-        font-size: 0.7rem;
-        padding: 6px 18px;
+        margin-left: $grid-p-SM;
     }
     @include responsive-MD{
-        font-size: 0.8rem;
-        padding: 6px 18px;
+        margin-left: $grid-p-MD;
     }
     @include responsive-LG{
-        font-size: 0.9rem;
-        padding: 8px 20px;
+        margin-left: $grid-p-LG;
     }
     @include responsive-XL{
-        font-size: 0.9rem;
-        padding: 8px 20px;
+        margin-left: $grid-p-XL;
     }
 }
 
