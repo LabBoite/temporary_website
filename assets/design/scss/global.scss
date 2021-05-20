@@ -324,6 +324,129 @@ main {
 
 /*-- MENU --*/
 
+.menu-grid {
+    display: grid;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+    max-width: 1300px;
+    @include responsive-XS{
+        grid-template-columns: 1fr;
+        width: 100vw;
+        margin-top: $m1-XS;
+        margin-bottom: $m1-XS;
+        padding-left: 20px;
+        padding-right: 20px;
+        row-gap: $grid-row-XS;
+    }
+    @include responsive-SM{
+        grid-template-columns: repeat(2, 1fr);
+        width: 100vw;
+        margin-top: $m1-SM;
+        margin-bottom: $m1-SM;
+        padding-left: 20px;
+        padding-right: 20px;
+        column-gap: $grid-column-SM;
+        row-gap: $grid-row-SM;
+    }
+    @include responsive-MD{
+        grid-template-columns: repeat(2, 1fr);
+        padding-left: 35px;
+        padding-right: 35px;
+        width: 100vw;
+        margin-top: $m1-MD;
+        margin-bottom: $m1-MD;
+        column-gap: $grid-column-MD;
+        row-gap: $grid-row-MD;
+    }
+    @include responsive-LG{
+        grid-template-columns: repeat(3, 1fr);
+        padding-left: 40px;
+        padding-right: 40px;
+        width: 100vw;
+        margin-top: $m1-LG;
+        margin-bottom: $m1-LG;
+        column-gap: $grid-column-LG;
+        row-gap: $grid-row-LG;
+    }
+    @include responsive-XL{
+        grid-template-columns: repeat(3, 1fr);
+        padding-left: 40px;
+        padding-right: 40px;
+        width: 100vw;
+        margin-top: $m1-XL;
+        margin-bottom: $m1-XL;
+        column-gap: $grid-column-XL;
+        row-gap: $grid-row-XL;
+    }
+}
+
+.menu-grid a {
+    text-decoration: none;
+}
+
+.menu-grid-item {
+    background: $orange-1;
+    transition-duration: 0.2s;
+}
+
+.menu-grid-item:hover {
+    background: $orange-2;
+    transition-duration: 0.2s;
+}
+
+.menu-grid-title {
+    text-align: center;
+    font-weight: 500;
+    @include responsive-XS{
+        padding: $grid-p-XS;
+    }
+    @include responsive-SM{
+        padding: $grid-p-SM;
+    }
+    @include responsive-MD{
+        padding: $grid-p-MD;
+    }
+    @include responsive-LG{
+        padding: $grid-p-LG;
+    }
+    @include responsive-XL{
+        padding: $grid-p-XL;
+    }
+}
+
+.menu-grid-img img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.menu-grid-title {
+    border-top: 1px solid $orange-3;
+    font-weight: 400;
+    color: $orange-4;
+    text-decoration: none;
+    @include responsive-XS{
+        font-size: $p-XS;
+    }
+    @include responsive-SM{
+        font-size: $p-SM;
+    }
+    @include responsive-MD{
+        font-size: $p-MD;
+    }
+    @include responsive-LG{
+        font-size: $p-LG;
+    }
+    @include responsive-XL{
+        font-size: $p-XL;
+    }
+}
+
+.menu-grid-title strong {
+    font-weight: 700;
+}
+
 .menu-list {
     list-style: none;
     margin: 0;
@@ -416,8 +539,8 @@ main {
     }
 }
 
-.bloc:last-of-type {
-    border: none;
+.bloc:first-of-type {
+    border-top: 1px solid #E2E2E2;
 }
 
 .bloc h2 {
@@ -711,6 +834,32 @@ footer {
 
 
 /*-- PAGE --*/
+
+.page h1 {
+    font-weight: 800;
+    color: $orange-labboite;
+    margin-top: 0;
+    @include responsive-XS{
+        font-size: $h1-fontsize-XS;
+        margin-bottom: $h1-fontsize-XS / 2;
+    }
+    @include responsive-SM{
+        font-size: $h1-fontsize-SM;
+        margin-bottom: $h1-fontsize-SM / 2;
+    }
+    @include responsive-MD{
+        font-size: $h1-fontsize-MD;
+        margin-bottom: $h1-fontsize-MD / 2;
+    }
+    @include responsive-LG{
+        font-size: $h1-fontsize-LG;
+        margin-bottom: $h1-fontsize-LG / 2;
+    }
+    @include responsive-XL{
+        font-size: $h1-fontsize-XL;
+        margin-bottom: $h1-fontsize-XL / 2;
+    }
+}
 
 .page h2 {
     font-weight: 700;
